@@ -6,9 +6,9 @@ function Post(props) {
   return (
     <Card className="my-3">
           <CardBody>
-            <CardTitle>{props.subject}</CardTitle>
+            <CardTitle>{props.title}</CardTitle>
             <CardSubtitle className="text-muted">This was Posted By: {props.name}</CardSubtitle>
-            <CardText>{props.content}</CardText>
+            <CardText>{props.message}</CardText>
             <div className="row">
               <div className="col-6">
                 <Button color="success" className="m-1" name="like" onClick={(e)=>props.handleOnClick(e,props.id)}>Like</Button>
